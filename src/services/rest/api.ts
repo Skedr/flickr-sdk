@@ -447,6 +447,14 @@ import type { FlickrUrlsLookupGroupParams } from "./flickr.urls.lookupGroup"
 import type { FlickrUrlsLookupGroupResponse } from "./flickr.urls.lookupGroup.response"
 import type { FlickrUrlsLookupUserParams } from "./flickr.urls.lookupUser"
 import type { FlickrUrlsLookupUserResponse } from "./flickr.urls.lookupUser.response"
+import type { FlickrContactsAddParams } from "./flickr.contacts.add"
+import type { FlickrContactsAddResponse } from "./flickr.concacts.add.response"
+import type { FlickrContactsBlockParams } from "./flickr.contacts.block"
+import type { FlickrContactsBlockResponse } from "./flickr.contacts.block.response"
+import type { FlickrContactsUnblockParams } from "./flickr.contacts.unblock"
+import type { FlickrContactsUnblockResponse } from "./flickr.contacts.unblock.response"
+import type { FlickrContactsRemoveParams } from "./flickr.contacts.remove"
+import type { FlickrContactsRemoveResponse } from './flickr.contacts.remove.response';
 
 export type API = {
   "flickr.activity.userComments": [
@@ -1295,6 +1303,22 @@ export type API = {
   "flickr.urls.lookupUser": [
     FlickrUrlsLookupUserParams,
     FlickrUrlsLookupUserResponse,
+  ],
+  "flickr.contacts.add": [
+    FlickrContactsAddParams,
+    FlickrContactsAddResponse,
+  ],
+  "flickr.contacts.block": [
+    FlickrContactsBlockParams, 
+    FlickrContactsBlockResponse
+  ],
+  "flickr.contacts.unblock": [
+    FlickrContactsUnblockParams,
+    FlickrContactsUnblockResponse
+  ],
+  "flickr.contacts.remove": [
+    FlickrContactsRemoveParams,
+    FlickrContactsRemoveResponse
   ]
 }
 
