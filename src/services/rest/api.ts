@@ -454,7 +454,9 @@ import type { FlickrContactsBlockResponse } from "./flickr.contacts.block.respon
 import type { FlickrContactsUnblockParams } from "./flickr.contacts.unblock"
 import type { FlickrContactsUnblockResponse } from "./flickr.contacts.unblock.response"
 import type { FlickrContactsRemoveParams } from "./flickr.contacts.remove"
-import type { FlickrContactsRemoveResponse } from './flickr.contacts.remove.response';
+import type { FlickrContactsRemoveResponse } from "./flickr.contacts.remove.response"
+import type { FlickrStatsGetTotalViewsForDateRangeParams } from "./flickr.stats.getTotalViewsForDateRange"
+import type { FlickrStatsGetTotalViewsForDateRangeResponse } from "./flickr.stats.getTotalViewsForDateRange.response"
 
 export type API = {
   "flickr.activity.userComments": [
@@ -1303,22 +1305,23 @@ export type API = {
   "flickr.urls.lookupUser": [
     FlickrUrlsLookupUserParams,
     FlickrUrlsLookupUserResponse,
-  ],
-  "flickr.contacts.add": [
-    FlickrContactsAddParams,
-    FlickrContactsAddResponse,
-  ],
+  ]
+  "flickr.contacts.add": [FlickrContactsAddParams, FlickrContactsAddResponse]
   "flickr.contacts.block": [
-    FlickrContactsBlockParams, 
-    FlickrContactsBlockResponse
-  ],
+    FlickrContactsBlockParams,
+    FlickrContactsBlockResponse,
+  ]
   "flickr.contacts.unblock": [
     FlickrContactsUnblockParams,
-    FlickrContactsUnblockResponse
-  ],
+    FlickrContactsUnblockResponse,
+  ]
   "flickr.contacts.remove": [
     FlickrContactsRemoveParams,
-    FlickrContactsRemoveResponse
+    FlickrContactsRemoveResponse,
+  ]
+  "flickr.stats.getTotalViewsForDateRange": [
+    FlickrStatsGetTotalViewsForDateRangeParams,
+    FlickrStatsGetTotalViewsForDateRangeResponse,
   ]
 }
 
